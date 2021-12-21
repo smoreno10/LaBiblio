@@ -2,285 +2,365 @@
 <html lang="es">
 
 <head>
+	<!-- Meta	 -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Titulo	 -->
+	<title>La Biblio</title>
+	<!-- Links	 -->
+	<!-- Favicon -->
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- Fuentes -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
-	<title>La Biblio</title>
+	<!-- Estilos Boostrap	 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- Estilos Propios	 -->
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<header class="flex ma-space-around ca-center">
-		<a href="index.html" class="column as-start">
-			<img src="./img/logo_wh.png" alt="Logo La Biblio">
-			<h2 class="la-biblio">La Biblio</h2>
-		</a>
-		<ul class="flex">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="./pages/noticias.html">Noticias</a>
-			</li>
-			<li>
-				<a href="./pages/eventos.html">Eventos</a>
-			</li>
-			<li>
-				<a href="./pages/catalogo.html">Catálogo</a>
-			</li>
-			<li>
-				<a href="./pages/la_biblio.html">La Biblio</a>
-			</li>
-			<li>
-				<a href="./pages/contacto.html">Contacto</a>
-			</li>
-		</ul>
+	<!-- Inicio header -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo_wh.png" alt="Logo La Biblio" class="d-inline-block align-text-top" height="70px">
+					<h2 class="la-biblio">La Biblio</h2>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#menu" aria-controls="menu" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/noticias.html">Noticias</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/eventos.html">Eventos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/catalogo.html">Catálogo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/la_biblio.html">La Biblio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="pages/contacto.html"> Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
 
-	<main>
-		<section>
-			<h2>Últimas noticias</h2>
-			<article>
-				<img src="./img/1619185964.jpg">
-				<p>
-					01/12/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
-					cupiditate
-					illum
-					magni iusto,
-					ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
-					Maiores,
-					omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
-					odio
-					ipsa
-					placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
-				</p>
+	<!-- Inicio main -->
+	<main class="container">
+		<h2>Últimas noticias</h2>
+		<section class="row">
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/1619185964.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">01/12/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
+							cupiditate
+							illum
+							magni iusto,
+							ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
+							Maiores,
+							omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
+							odio
+							ipsa
+							placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
+						</p>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/1637779213.jpg">
-				<p>
-					27/11/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
-					cupiditate
-					illum
-					magni iusto,
-					ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
-					Maiores,
-					omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
-					odio
-					ipsa
-					placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
-				</p>
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/1637779213.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">27/11/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
+							cupiditate
+							illum
+							magni iusto,
+							ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
+							Maiores,
+							omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
+							odio
+							ipsa
+							placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
+						</p>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/1637694308.jpg">
-				<p>
-					22/11/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
-					cupiditate
-					illum
-					magni iusto,
-					ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
-					Maiores,
-					omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
-					odio
-					ipsa
-					placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
-				</p>
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/1637694308.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">22/11/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
+							cupiditate
+							illum
+							magni iusto,
+							ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
+							Maiores,
+							omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
+							odio
+							ipsa
+							placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
+						</p>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/1636980983.jpg">
-				<p>
-					15/11/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
-					cupiditate
-					illum
-					magni iusto,
-					ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
-					Maiores,
-					omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
-					odio
-					ipsa
-					placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
-				</p>
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/1636980983.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">15/11/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aut,
+							cupiditate
+							illum
+							magni iusto,
+							ex officia labore quam inventore a fugiat sed odit repellendus porro quaerat excepturi.
+							Maiores,
+							omnis porro nam quam, saepe expedita minus ad dolores unde dolorum quaerat fugit magnam,
+							odio
+							ipsa
+							placeat earum incidunt debitis enim voluptatibus fuga excepturi quia ipsum minima?
+						</p>
+					</div>
+				</div>
 			</article>
-			<h3 class="text-center">
-				<a href="./pages/noticias.html">Ver mas...</a>
-			</h3>
 		</section>
-		<section>
-			<h2>Próximos eventos</h2>
-			<article>
-				<img src="./img/1638197450.jpg">
-				<p>
-					30/12/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure neque ab,
-					repellat,
-					consequatur quisquam sint minima optio, ratione tempore animi iste a. Itaque saepe quia
-					reprehenderit earum laudantium, ab quae suscipit nihil ducimus consectetur corporis error
-					nesciunt
-					magnam quod totam. Nobis, tempore consequuntur! Ratione doloremque itaque iure voluptate
-					praesentium.
-				</p>
+		<h3 class="text-center">
+			<a href="./pages/noticias.html">Ver mas...</a>
+		</h3>
+
+		<h2>Próximos eventos</h2>
+		<section class="row">
+			<article class="col-lg-3 col-md-6 mb-3 mb-3">
+				<div class="card h-100">
+					<img src="img/1638197450.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">30/12/2021</h5>
+						<p class="card-text">
+							- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure neque ab,
+							repellat,
+							consequatur quisquam sint minima optio, ratione tempore animi iste a. Itaque saepe quia
+							reprehenderit earum laudantium, ab quae suscipit nihil ducimus consectetur corporis error
+							nesciunt
+							magnam quod totam. Nobis, tempore consequuntur! Ratione doloremque itaque iure voluptate
+							praesentium.
+						</p>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/1637337353.jpg">
-				<p>
-					22/12/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure neque ab,
-					repellat,
-					consequatur quisquam sint minima optio, ratione tempore animi iste a. Itaque saepe quia
-					reprehenderit earum laudantium, ab quae suscipit nihil ducimus consectetur corporis error
-					nesciunt
-					magnam quod totam. Nobis, tempore consequuntur! Ratione doloremque itaque iure voluptate
-					praesentium.
-				</p>
+			<article class="col-lg-3 col-md-6 mb-3 mb-3">
+				<div class="card h-100">
+					<img src="img/1637337353.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">22/12/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste corporis sapiente iure
+							excepturi tenetur ullam inventore officiis similique, harum ex repellendus voluptatem, ea,
+							accusamus deserunt! Aut deleniti esse ratione. Blanditiis molestias possimus non, nihil
+							fuga, cum eligendi reiciendis sint consectetur sunt aliquid nemo illum, harum fugiat ratione
+							pariatur voluptate! Ad.
+						</p>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/1636148574.jpg">
-				<p>
-					18/12/2021 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure neque ab,
-					repellat,
-					consequatur quisquam sint minima optio, ratione tempore animi iste a. Itaque saepe quia
-					reprehenderit earum laudantium, ab quae suscipit nihil ducimus consectetur corporis error
-					nesciunt
-					magnam quod totam. Nobis, tempore consequuntur! Ratione doloremque itaque iure voluptate
-					praesentium.
-				</p>
+			<article class="col-lg-3 col-md-6 mb-3 mb-3">
+				<div class="card h-100">
+					<img src="img/1636148574.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">18/12/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iure neque ab,
+							repellat,
+							consequatur quisquam sint minima optio, ratione tempore animi iste a. Itaque saepe quia
+							reprehenderit earum laudantium, ab quae suscipit nihil ducimus consectetur corporis error
+							nesciunt
+							magnam quod totam. Nobis, tempore consequuntur! Ratione doloremque itaque iure voluptate
+							praesentium.
+						</p>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/1636566694.jpg">
-				<p>
-					13/12/2021 - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem rerum commodi
-					dignissimos suscipit,
-					et aperiam iure sapiente similique alias necessitatibus, exercitationem qui! Quibusdam
-					architecto ad
-				</p>
+			<article class="col-lg-3 col-md-6 mb-3 mb-3">
+				<div class="card h-100">
+					<img src="img/1636566694.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">13/12/2021</h5>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem rerum commodi
+							dignissimos suscipit,
+							et aperiam iure sapiente similique alias necessitatibus, exercitationem qui! Quibusdam
+							architecto ad
+						</p>
+					</div>
+				</div>
 			</article>
-			<h3 class="text-center">
-				<a href="./pages/eventos.html">Ver mas...</a>
-			</h3>
 		</section>
-		<section>
-			<h2>Últimos ingresos</h2>
-			<article>
-				<img src="./img/griegosAntiguos.jpg">
-				<table>
-					<tr>
-						<th>Género</th>
-						<td>Historia</td>
-					</tr>
-					<tr>
-						<th>Autor</th>
-						<td>Hall Edit</td>
-					</tr>
-					<tr>
-						<th>Título</th>
-						<td>Los Griegos Antiguos</td>
-					</tr>
-				</table>
+		<h3 class="text-center">
+			<a href="./pages/eventos.html">Ver mas...</a>
+		</h3>
+
+		<h2>Últimos ingresos</h2>
+		<section class="row">
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/griegosAntiguos.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<table>
+							<tr>
+								<th>Género</th>
+								<td>Historia</td>
+							</tr>
+							<tr>
+								<th>Autor</th>
+								<td>Hall Edit</td>
+							</tr>
+							<tr>
+								<th>Título</th>
+								<td>Los Griegos Antiguos</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/amoreesunperro.jpg">
-				<table>
-					<tr>
-						<th>Género</th>
-						<td>Humor</td>
-					</tr>
-					<tr>
-						<th>Autor</th>
-						<td>Tute</td>
-					</tr>
-					<tr>
-						<th>Título</th>
-						<td>Amor es un perro verde</td>
-					</tr>
-				</table>
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/amoreesunperro.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<table>
+							<tr>
+								<th>Género</th>
+								<td>Humor</td>
+							</tr>
+							<tr>
+								<th>Autor</th>
+								<td>Tute</td>
+							</tr>
+							<tr>
+								<th>Título</th>
+								<td>Amor es un perro verde</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
 			</article>
-			<article>
-				<img src="./img/macanudo2.jpg">
-				<table>
-					<tr>
-						<th>Género</th>
-						<td>Humor</td>
-					</tr>
-					<tr>
-						<th>Autor</th>
-						<td>Liniers</td>
-					</tr>
-					<tr>
-						<th>Título</th>
-						<td>Macanudo 2</td>
-					</tr>
-				</table>
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/macanudo2.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<table>
+							<tr>
+								<th>Género</th>
+								<td>Humor</td>
+							</tr>
+							<tr>
+								<th>Autor</th>
+								<td>Liniers</td>
+							</tr>
+							<tr>
+								<th>Título</th>
+								<td>Macanudo 2</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</article>
-			<article>
-				<img src="./img/laaventuradecome.jpg">
-				<table>
-					<tr>
-						<th>Género</th>
-						<td>Humor</td>
-					</tr>
-					<tr>
-						<th>Autor</th>
-						<td>Quino</td>
-					</tr>
-					<tr>
-						<th>Título</th>
-						<td>La aventura de comer</td>
-					</tr>
-				</table>
+			<article class="col-lg-3 col-md-6 mb-3">
+				<div class="card h-100">
+					<img src="img/laaventuradecome.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<table>
+							<tr>
+								<th>Género</th>
+								<td>Humor</td>
+							</tr>
+							<tr>
+								<th>Autor</th>
+								<td>Quino</td>
+							</tr>
+							<tr>
+								<th>Título</th>
+								<td>La aventura de comer</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</article>
-			<h3 class="text-center">
-				<a href="./pages/catalogo.html">Ver mas...</a>
-			</h3>
 		</section>
+		<h3 class="text-center">
+			<a href="./pages/catalogo.html">Ver mas...</a>
+		</h3> 
 	</main>
 
-	<footer class="column">
-		<div class="flex ma-space-around ca-center">
-			<div class="column">
-				<p>Seguinos en las redes</p>
-				<ul class="row ma-center">
-					<li>
-						<a href="#" target="_blank"><img src="./img/instagram_wh.png" alt="link a instagram"
-								height="28"></a>
-					</li>
-					<li>
-						<a href="#" target="_blank"><img src="./img/facebook_wh.png" alt="link a facebook"
-								height="28"></a>
-					</li>
-					<li>
-						<a href="#" target="_blank"><img src="./img/twitter_wh.png" alt="link a twitter"
-								height="28"></a>
-					</li>
-				</ul>
-			</div>
-			<div class="column">
-				<ul class="flex">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="./pages/noticias.html">Noticias</a>
-					</li>
-					<li>
-						<a href="./pages/eventos.html">Eventos</a>
-					</li>
-					<li>
-						<a href="./pages/catalogo.html">Catálogo</a>
-					</li>
-					<li>
-						<a href="./pages/la_biblio.html">La Biblio</a>
-					</li>
-					<li>
-						<a href="./pages/contacto.html">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<p class="text-center">© 2021 <span class="la-biblio">La Biblio</span> Reservados todos los derechos.</p>
+	<!-- Inicio footer -->
+	<footer>
+		<ul class="nav justify-content-center mb-3  border-top">
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="pages/noticias.html">Noticias</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="pages/eventos.html">Eventos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="pages/catalogo.html">Catálogo</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="pages/la_biblio.html">La Biblio</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="pages/contacto.html"> Contacto</a>
+			</li>
+		</ul>
+		<ul class="nav justify-content-center mb-3">
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="#" target="_blank">
+					<img src="img/instagram_bk.png" height="30px">
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="#" target="_blank">
+					<img src="img/facebook_bk.png" height="30px">
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link px-2 text-muted" href="#" target="_blank">
+					<img src="img/twitter_bk.png" height="30px">
+				</a>
+			</li>
+		</ul>
+		<p class="text-muted text-center">© 2021 <span class="la-biblio">La Biblio</span> Reservados todos los derechos.
+		</p>
 	</footer>
+
+	<!-- scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 </body>
 
 </html>
