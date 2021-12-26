@@ -1,10 +1,7 @@
-/* Reset */
-* {
-    padding: 0;
-    margin: 0;
-}
+$bg-1: #343A40;
+$bg-hover: #49B58F;
 
-/* Animaciones y transformaciones */
+
 .container,  
 .col-md-6, 
 .col-lg-3
@@ -19,7 +16,7 @@
   }
  
 .ver-mas, .ver-mas:hover {
-    color: #343A40 !important;
+    color: $bg-1 !important;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -35,7 +32,7 @@
     width: 100%;
     height: 2px; 
     transform: scaleX(0);
-    background-color:#49B58F;
+    background-color:$bg-hover;
     transition: transform 0.3s;
   }
 
@@ -47,44 +44,3 @@
     transition: transform 0.3s;
     transform: rotate(10deg) scale(1.1);
   }
-
-.la-biblio  {
-    text-align: center;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: x-large;
-}
-
-main, main section {
-    margin: 30px;
-}
-
-main article img {
-    width: 100%;
-    height: 300px;
-    padding-bottom: 15px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
-th, td {
-    text-align: start;
-}
-.img-la-biblio {
-    margin: 15px;
-}
-
-.fab {
-  font-size: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
