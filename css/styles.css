@@ -4,6 +4,50 @@
     margin: 0;
 }
 
+/* Animaciones y transformaciones */
+.container,  
+.col-md-6, 
+.col-lg-3
+  {
+    transition: all 1.5s;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+  }
+ 
+.ver-mas, .ver-mas:hover {
+    color: #343A40 !important;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link:after, .ver-mas:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px; 
+    transform: scaleX(0);
+    background-color:#49B58F;
+    transition: transform 0.3s;
+  }
+
+  .nav-link:hover:after,.ver-mas:hover:after {
+    transform: scaleX(1);
+  }
+
+  .navbar-brand:hover, .fab:hover {
+    transition: transform 0.3s;
+    transform: rotate(10deg) scale(1.1);
+  }
+
 .la-biblio  {
     text-align: center;
     font-family: 'Reenie Beanie', cursive;
@@ -14,7 +58,7 @@ main, main section {
     margin: 30px;
 }
 
-main  article img {
+main article img {
     width: 100%;
     height: 300px;
     padding-bottom: 15px;
@@ -26,6 +70,10 @@ th, td {
 }
 .img-la-biblio {
     margin: 15px;
+}
+
+.fab {
+  font-size: 40px;
 }
 
 
