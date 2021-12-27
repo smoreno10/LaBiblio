@@ -1,5 +1,7 @@
 @import 'animaciones';
 
+$form-check-input-checked-color: red !important;
+
 * {
     padding: 0;
     margin: 0;
@@ -19,7 +21,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .la-biblio {
     text-align: center;
