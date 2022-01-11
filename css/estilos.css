@@ -1,6 +1,7 @@
 .container,
 .col-md-6,
 .col-lg-3 {
+  -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
 
@@ -20,15 +21,19 @@
 
 .nav-link:after,
 .ver-mas:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 2px;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .nav-link.light:after {
@@ -54,65 +59,254 @@
 
 .nav-link:hover:after,
 .ver-mas:hover:after {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .navbar-brand:hover,
 .fab:hover {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transform: rotate(10deg) scale(1.1);
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: rotate(10deg) scale(1.1);
+          transform: rotate(10deg) scale(1.1);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  color: #6c757d;
+header {
+  margin-bottom: 15px;
 }
 
-.navbar {
+header .navbar {
   background-image: url(../img/bg-img-header.svg);
   background-color: transparent !important;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-footer {
-  background-image: url(../img/bg-img-footer.svg);
-  background-color: transparent !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.la-biblio {
+header .navbar .la-biblio {
   text-align: center;
-  font-family: "Reenie Beanie", cursive;
-  font-size: x-large;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: inherit;
 }
 
-main,
 main section {
   margin: 30px;
 }
 
-main article img {
+main section article .card {
+  border: none;
+  -webkit-box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
+          box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
+}
+
+main section article .card .card-img-top, main section article .card .card-img-top-not-01, main section article .card .card-img-top-not-02, main section article .card .card-img-top-not-03, main section article .card .card-img-top-not-04, main section article .card .card-img-top-not-05, main section article .card .card-img-top-not-06, main section article .card .card-img-top-not-07, main section article .card .card-img-top-eve-01, main section article .card .card-img-top-eve-02, main section article .card .card-img-top-eve-03, main section article .card .card-img-top-eve-04, main section article .card .card-img-top-eve-05, main section article .card .card-img-top-eve-06, main section article .card .card-img-top-cat-01, main section article .card .card-img-top-cat-02, main section article .card .card-img-top-cat-03, main section article .card .card-img-top-cat-04, main section article .card .card-img-top-cat-05, main section article .card .card-img-top-cat-06, main section article .card .card-img-top-cat-07, main section article .card .card-img-top-cat-08, main section article .card .card-img-top-cat-09, main section article .card .card-img-top-labiblio-01 {
   width: 100%;
   height: 300px;
   padding-bottom: 15px;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
 }
 
-th,
-td {
+main section article .card-img-top-not-01 {
+  background-image: url("../img/noticias/1636069991.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-not-02 {
+  background-image: url("../img/noticias/1636069992.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-not-03 {
+  background-image: url("../img/noticias/1636069993.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-not-04 {
+  background-image: url("../img/noticias/1636069994.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-not-05 {
+  background-image: url("../img/noticias/1636069995.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-not-06 {
+  background-image: url("../img/noticias/1636069996.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-not-07 {
+  background-image: url("../img/noticias/1636069997.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-eve-01 {
+  background-image: url("../img/eventos/1636065512.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-eve-02 {
+  background-image: url("../img/eventos/1636148574.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-eve-03 {
+  background-image: url("../img/eventos/1636566694.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-eve-04 {
+  background-image: url("../img/eventos/1636640355.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-eve-05 {
+  background-image: url("../img/eventos/1637337353.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-eve-06 {
+  background-image: url("../img/eventos/1638197450.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-01 {
+  background-image: url("../img/catalogo/griegosAntiguos.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-02 {
+  background-image: url("../img/catalogo/amoreesunperro.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-03 {
+  background-image: url("../img/catalogo/macanudo2.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-04 {
+  background-image: url("../img/catalogo/laaventuradecome.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-05 {
+  background-image: url("../img/catalogo/laEscena.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-06 {
+  background-image: url("../img/catalogo/blade_runner.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-07 {
+  background-image: url("../img/catalogo/la_novia_de_sandro.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-08 {
+  background-image: url("../img/catalogo/las_malas.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-cat-09 {
+  background-image: url("../img/catalogo/filosofia_a_martillazos.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article .card-img-top-labiblio-01 {
+  background-image: url("../img/la_biblio.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section article th,
+main section article td {
   text-align: start;
+  padding-left: 5px;
 }
 
-.img-la-biblio {
-  margin: 15px;
+main section form {
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
+          box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
+  padding: 15px;
 }
 
-.fab {
+footer {
+  background-color: #fff !important;
+}
+
+footer .la-biblio {
+  text-align: center;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: inherit;
+}
+
+footer .fab {
   font-size: 40px;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  color: #6c757d;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  background-image: url(../img/bg-img-body.svg);
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*# sourceMappingURL=estilos.css.map */

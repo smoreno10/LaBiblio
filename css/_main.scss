@@ -1,0 +1,71 @@
+$urls: (
+    not-01: '../img/noticias/1636069991.jpg',
+    not-02: '../img/noticias/1636069992.jpg',
+    not-03: '../img/noticias/1636069993.jpg',
+    not-04: '../img/noticias/1636069994.jpg',
+    not-05: '../img/noticias/1636069995.jpg',
+    not-06: '../img/noticias/1636069996.jpg',
+    not-07: '../img/noticias/1636069997.jpg',
+    eve-01: '../img/eventos/1636065512.jpg',
+    eve-02: '../img/eventos/1636148574.jpg',
+    eve-03: '../img/eventos/1636566694.jpg',
+    eve-04: '../img/eventos/1636640355.jpg',
+    eve-05: '../img/eventos/1637337353.jpg',
+    eve-06: '../img/eventos/1638197450.jpg',
+    cat-01: '../img/catalogo/griegosAntiguos.jpg',
+    cat-02: '../img/catalogo/amoreesunperro.jpg',
+    cat-03: '../img/catalogo/macanudo2.jpg',
+    cat-04: '../img/catalogo/laaventuradecome.jpg',
+    cat-05: '../img/catalogo/laEscena.jpg',
+    cat-06: '../img/catalogo/blade_runner.jpg',
+    cat-07: '../img/catalogo/la_novia_de_sandro.jpg',
+    cat-08: '../img/catalogo/las_malas.jpg',
+    cat-09: '../img/catalogo/filosofia_a_martillazos.png',
+    labiblio-01: '../img/la_biblio.jpg'
+);
+
+main {
+    & section {
+        margin: 30px;
+
+        & article {
+            & .card {
+                border: none;
+                box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
+
+                & .card-img-top {
+                    width: 100%;
+                    height: 300px;
+                    padding-bottom: 15px;
+                }
+            }
+
+            @mixin url($url, $repeat, $size, $position) {
+                background-image: url($url);
+                background-repeat: $repeat;
+                background-size: $size;
+                background-position: $position
+            }
+
+            @each $llave, $valor in $urls {
+                .card-img-top-#{$llave} {
+                    @extend .card-img-top;
+                    @include url($valor, repeat, cover, center)
+                }
+            }
+
+            & th,
+            td {
+                text-align: start;
+                padding-left: 5px;
+            }
+        }
+        & form {
+            background-color: #fff;
+            background-clip: border-box;
+            border-radius: 0.25rem;
+            box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
+            padding: 15px;
+        }
+    }
+}
