@@ -1,5 +1,4 @@
-$urls: (
-    not-01: '../img/noticias/1636069991.jpg',
+$urls: (not-01: '../img/noticias/1636069991.jpg',
     not-02: '../img/noticias/1636069992.jpg',
     not-03: '../img/noticias/1636069993.jpg',
     not-04: '../img/noticias/1636069994.jpg',
@@ -25,6 +24,10 @@ $urls: (
 );
 
 main {
+    & h3 {
+        border-bottom: 3px solid #bf9392;
+    }
+
     & section {
         margin: 30px;
 
@@ -47,7 +50,8 @@ main {
                 background-position: $position
             }
 
-            @each $llave, $valor in $urls {
+            @each $llave,
+            $valor in $urls {
                 .card-img-top-#{$llave} {
                     @extend .card-img-top;
                     @include url($valor, repeat, cover, center)
@@ -60,6 +64,7 @@ main {
                 padding-left: 5px;
             }
         }
+
         & form {
             background-color: #fff;
             background-clip: border-box;

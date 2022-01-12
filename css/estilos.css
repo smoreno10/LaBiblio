@@ -90,6 +90,10 @@ header .navbar .la-biblio {
   font-size: inherit;
 }
 
+main h3 {
+  border-bottom: 3px solid #bf9392;
+}
+
 main section {
   margin: 30px;
 }
