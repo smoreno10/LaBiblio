@@ -286,6 +286,18 @@ main section form {
   padding: 15px;
 }
 
+main section .btn-primary {
+  color: #fff;
+  background-color: #73A6AF;
+  border-color: #73A6AF;
+}
+
+main section .btn-primary:hover {
+  color: #fff;
+  background-color: #61858b;
+  border-color: #73A6AF;
+}
+
 footer {
   background-color: #fff !important;
 }

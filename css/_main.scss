@@ -71,6 +71,15 @@ main {
             border-radius: 0.25rem;
             box-shadow: 1px 1px 5px 0px #dedede, 0px 0px 0px #e2e2e2;
             padding: 15px;
+        } & .btn-primary {
+            color: #fff;
+            background-color: #73A6AF;
+            border-color: #73A6AF;
+        }
+        & .btn-primary:hover {
+            color: #fff;
+            background-color: #61858b;
+            border-color: #73A6AF;
         }
     }
 }
