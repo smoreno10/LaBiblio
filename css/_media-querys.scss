@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    .card-landing {
+        grid-template-columns: 100% !important;
+        grid-template-areas:
+            "welcome"
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5" !important;
+    }
+}

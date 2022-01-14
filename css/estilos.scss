@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-querys';
 @import 'animaciones';
 @import 'header';
 @import 'main';
@@ -11,9 +12,14 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
-     background-image: url(../img/bg-img-body.svg);
-     background-color: transparent !important;
-     background-repeat: no-repeat;
-     background-size: cover;
+    min-height: 100%;
+    background-image: url(../img/bg-img-header.svg);
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
