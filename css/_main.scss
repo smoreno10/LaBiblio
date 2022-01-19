@@ -42,6 +42,7 @@ main {
             & .card {
                 border: none;
                 box-shadow: 1px 1px 5px 0px #a48f8f, 0px 0px 0px #e2e2e2;
+                padding: 15px;
 
                 & .card-img-top {
                     width: 100%;
@@ -49,39 +50,14 @@ main {
                     padding-bottom: 15px;
                 }
 
-                & .card-landing {
-                    display: grid;
-                    grid-template-columns: auto auto 25% 25%;
-                    gap: 15px;
-                    grid-template-areas:
-                        "welcome welcome img1 img2"
-                        "welcome welcome img1 img3"
-                        "welcome welcome img4 img3"
-                        "welcome welcome img5 img5"
-                    ;
-                }
-
-                & .welcome {
-                    grid-area: welcome;
-                    padding: 30px;
-
-                }
-                
                 @each $img in img1, img2, img3, img4 {
                     .#{$img} {
-                        grid-area: #{$img};
-                        @include url("../img/#{$img}.jpg", repeat, cover, center, 0.7);
-                        @if $img == img1 {
-                            height: 200px;
-                        } @else if $img == img3 {
-                            height: 200px;
-                        } @else {
-                            height: 120px;
-                        }                        
+                        @include url("../img/#{$img}.jpg", repeat, cover, center, 0.7);                     
                         box-shadow: 1px 1px 5px 0px #a48f8f, 0px 0px 0px #e2e2e2;
                         border-radius: 0.25rem;
+                        height: 300px;
                     }
-                }              
+                }         
             }
         }
 

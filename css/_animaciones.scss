@@ -59,7 +59,14 @@
 }
 
 .navbar-brand:hover,
-.fab:hover {
+.fab:hover, .h-100:hover {
   transition: transform 0.3s;
   transform: rotate(10deg) scale(1.1);
+  cursor: pointer;
+}
+
+.h-100:hover {
+  transition: transform 0.3s;
+  transform: scale(1.03);
+  cursor: pointer;
 }
